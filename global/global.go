@@ -1,11 +1,13 @@
 package global
 
 import (
-	"github.com/spf13/viper"
 	"gin-create/config"
+	"github.com/spf13/viper"
+	"go.uber.org/zap"
 )
 
 var (
-	GVA_VP		*viper.Viper
-	GVA_CONFIG	config.Server
+	GVA_VP     *viper.Viper
+	GVA_CONFIG config.Server
+	GVA_LOG    *zap.Logger
 )
